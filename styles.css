@@ -1,0 +1,2015 @@
+/* Style Sheet */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	list-style-type: none;
+	text-decoration: none;
+	outline: none;
+	font-family: "Poppins", sans-serif;
+	/*overflow-x: hidden;*/
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 8rem; /* height of mainNav */
+}
+
+:root {
+	--blue: #0260C0;
+	--orange: #ff7700;
+	--green: #12695D;
+	--red: #ff0d00;
+	--secondary: #e1e1e1;
+	--primary: #444;
+	--background: #f5f5f5;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	border-top: 0.1rem solid var(--secondary);
+	background-color: var(--background);
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--secondary);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(images/basecamp.jpg) no-repeat center/cover;
+	background-position: 50% 100%;
+	position: relative;
+}
+
+/* Navigation Wrapper */
+.navWrapper {
+	width: 90%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 1rem;
+}
+
+/* Logo */
+.logo {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 2rem;
+}
+
+.logo img {
+	width: 100%;
+}
+
+/* Nav */
+.navbar {
+	width: 55%;
+}
+
+.nav {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navItem {
+	padding: 0.5rem 0.75rem;
+	cursor: pointer;
+}
+
+.navLink {
+	font-size: 1.7rem;
+	color: var(--secondary);
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/* NavInfo */
+.navInfo {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.infoFlag {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.infoFlag img {
+	width: 3rem;
+	margin-right: 0.5rem;
+}
+
+.infoFlag i {
+	color: var(--secondary);
+}
+
+.infoContact {
+	margin: 0 1rem;
+	font-weight: 500;
+	font-size: 1.1rem;
+	color: dimgray;
+	text-align: center;
+	color: var(--secondary);
+}
+
+.phone {
+	font-size: 1.5rem;
+}
+
+.infoUser {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.infoUser i {
+	color: var(--secondary);
+	padding: 0 1rem;
+}
+
+.infoLink a {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--secondary);
+	background-color: var(--orange);
+	padding: 1rem;
+	display: inline-block;
+}
+
+/* Banner */
+.banner {
+	position: absolute;
+	bottom: 3%;
+	left: 5%;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	color: var(--secondary);
+	/*width: 88%;*/
+	/*padding: 1%;*/
+	/*background-color: rgba(0, 0, 0, 0.1);*/
+	/*box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2), -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.2);*/
+}
+
+/* banner left */
+.bannerHeading {
+	font-size: 1.6rem;
+}
+
+.bannerTitle {
+	font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+.bannerTitle span {
+	font-size: 2rem;
+}
+
+.bannerReview {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.bannerCircle {
+	background-color: var(--green);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.spanCircle {
+	font-size: 1.6rem;
+	letter-spacing: 0.1rem;
+}
+
+.bannerRating {
+	height: 3.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bannerStar i {
+	color: var(--orange);
+	font-size: 1.4rem;
+	margin: 0 0.1rem;
+}
+
+.spanReview {
+	font-size: 1.2rem;
+}
+
+/* banner right */
+.bannerRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.bannerPrice {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.delPrice {
+	text-decoration: line-through;
+	background-color: var(--red);
+	font-size: 1.5rem;
+	padding: 0.2rem 0.6rem;
+	font-style: italic;
+}
+
+.sellingPrice {
+	font-size: 3.2rem;
+	font-weight: 600;
+}
+
+.dayPrice {
+	font-size: 1.5rem;
+}
+
+.wishList span {
+	font-size: 1.1rem;
+}
+
+.wishList i {
+	color: var(--red);
+	margin-right: 0.25rem;
+}
+
+/* Main Navigation */
+.mainNav {
+	width: 98%;
+	padding: 0 1%;
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	background-color: var(--background);
+	z-index: 99;
+}
+
+.sticky + .main {
+	padding-top: 5rem;
+}
+
+/* main left */
+.mainItem {
+	height: 100%;
+	display: flex;
+	align-items: stretch;
+}
+
+.mainListItem {
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	padding: 0 0.5rem;
+}
+
+.mainListItem:hover {
+	border-bottom: 0.3rem solid var(--orange);
+}
+
+.mainListItem:hover .mainLink {
+	color: var(--orange);
+}
+
+.mainLink {
+	color: var(--primary);
+	font-size: 1.7rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+/* main right */
+.mainRight {
+	display: flex;
+	align-items: center;
+}
+
+.tripPrice {
+	font-size: 1.8rem;
+	margin-right: 2rem;
+	padding: 0.5rem 1rem;
+	color: var(--primary);
+	text-align: center;
+}
+
+.delTripPrice {
+	display: block;
+	font-size: 1.3rem;
+	padding: 0 0.5rem;
+	text-decoration: line-through;
+	text-align: center;
+	color: var(--red);
+	border: 0.1rem solid var(--red);
+}
+
+.tripQ {
+	display: flex;
+	align-items: center;
+}
+
+.btn {
+	border: none;
+	margin: 0 0.5rem;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+}
+
+.btnQ1 {
+	background-color: var(--blue);
+	color: var(--secondary);
+}
+
+.btnQ2 {
+	background-color: var(--orange);
+	color: var(--secondary);
+}
+
+/* Main  */
+.main {
+	width: 100%;
+	/*background-color: red;*/
+}
+
+/* SECTION - OVERVIEW*/
+.overviewContent {
+	text-align: center;	
+	color: var(--primary);
+	width: 90%;
+	margin: auto;
+	padding-top: 7rem;
+}
+
+blockquote {
+	font-size: 2rem;
+	border-left: 0.5rem solid teal;
+	color: teal;
+	width: 90%;
+	margin: auto;
+}
+
+cite {
+	font-size: 1.3rem;
+	color: var(--orange);
+}
+
+.overviewContent h3 {
+	font-size: 1.9rem;
+	width: 85%;
+	margin: 3rem auto;
+	color: var(--green);
+}
+
+.overviewContent p {
+	width: 95%;
+	font-size: 1.6rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.8;
+	margin: 1.5rem auto;
+}
+
+.overviewContent p:nth-of-type(4) {
+	color: teal;
+	font-size: 1.8rem;
+}
+
+.overviewContent p:nth-of-type(4) span a {
+	color: var(--orange);
+	display: inline-block;
+	margin: 0 1.5rem;
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.overviewContent p:nth-of-type(4) span a:hover {
+	color: var(--blue);
+}
+
+/* Overview Review */
+.overviewReview {
+	width: 90%;
+	margin: 5rem auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* review brand */
+.reviewBrand {
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5rem;
+}
+
+.reviewBrand p {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.reviewBrand i {
+	color: var(--green);
+	font-size: 3.5rem;
+	border-radius: 50%;
+} 
+
+.ratingIcons img {
+	width: 2.6rem;
+	margin-top: 0.8rem;
+}
+
+.reviewRank {
+	font-weight: 600;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+.reviewTotal {
+	font-size: 1.3rem;
+}
+
+.reviewTotal span {
+	font-weight: 600;
+}
+
+/* review wrapper */
+.reviewWrapper {
+	width: 80rem;
+	height: 19rem;
+}
+
+.reviews {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.review {
+	width: 20rem;
+	height: 17rem;
+	padding: 1rem 1rem 0.8rem;
+	border: 0.1rem solid #aaa;
+	border-radius: 0.4rem;
+	transform: scale(0.99);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.review:hover {
+	transform: scale(1);
+}
+
+.reviewHead {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.reviewHead img {
+	width: 4rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+
+.reviewerName {
+	font-weight: 600;
+	font-size: 1.1rem;
+	letter-spacing: 0.05rem;
+	color: var(--blue);
+}
+
+.reviewDate {
+	font-size: 0.9rem;
+	color: dimgray;
+}
+
+.tripAdvLogo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+	color: var(--green);
+}
+
+.reviewRating {
+	display: flex;
+	margin: 1.5rem 0 1rem;
+}
+
+.reviewIcons img {
+	width: 1.5rem;
+	margin: 0 -0.1rem;
+}
+
+.verifiedIcon {
+	width: 1.4rem;
+	height: 1.4rem;
+	object-fit: cover;
+	margin-left: 1rem;
+}
+
+.reviewTitle {
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.reviewContent {
+	height: 6rem;
+	padding-right: 0.7rem;
+	color: dimgray;
+	margin-right: auto;
+	overflow-y: scroll;
+}
+
+.reviewContent::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.reviewContent::-webkit-scrollbar-track {
+  background: lightgray; 
+}
+
+.reviewContent::-webkit-scrollbar-thumb {
+  background: gray; 
+}
+
+.reviewContent::-webkit-scrollbar-thumb:hover {
+  background: teal; 
+}
+
+/* free booking */
+.freeBooking {
+	width: 90%;
+	margin: 5rem auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.freeBooking i {
+	margin-right: 1rem;
+}
+
+.freeBooking a {
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--orange);
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.freeBooking a:hover {
+	color: teal;
+}
+
+/* social links */
+.socialLinks {
+	width: 90%;
+	margin: 3rem auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socialLinks p {
+	font-size: 1.6rem;
+	margin-right: 2rem;
+	padding-right: 2rem;
+	border-right: 0.2rem solid var(--secondary);
+	color: var(--primary);
+	text-transform: uppercase;
+}
+
+.socialLink img {
+	width: 5rem;
+	height: 5rem;
+	margin: 0 0.5rem;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.socialLink img:hover {
+	opacity: 1;
+}
+
+/* overview box */
+.overviewBox {
+	margin-top: 5rem;
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/pattern.jpg);
+	background-repeat: repeat;
+	padding: 4rem 0;
+}
+
+.overviewWrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.sectionTitle {
+	color: var(--primary);
+	font-size: 3rem;
+	font-weight: 600;
+	margin-left: 1%;
+	text-transform: uppercase;
+}
+
+.overviewItems {
+	width: 100%;
+	height: 30rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.overviewItem {
+	display: flex;
+	align-items: center;
+	width: 24%;
+}
+
+.overviewItem img {
+	width: 5rem;
+	margin-right: 1rem;
+}
+
+.overviewItem p {
+	font-size: 1.9rem;
+	font-weight: 500;
+	color: teal;
+}
+
+.overviewItem span {
+	display: block;
+	font-size: 1.1rem;
+	color: dimgray;
+}
+
+/* SECTION - ITINERARY */
+/* outline itinerary */
+.itineraryContent {
+	width: 90%;
+	margin: 5rem auto;
+}
+
+.outlineItinerary {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.itineraryWrapper {
+	width: 98%;
+	padding: 1%;
+}
+
+.contentHeading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+/* show itinerary */
+.collapse {
+	margin-left: 1%;
+	display: flex;
+	align-items: center;
+	color: var(--blue);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.collapse span {
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.collapse i {
+	font-size: 1.4rem;
+	margin-left: 1rem;
+}
+
+.collapse:hover {
+	color: var(--orange);
+}
+
+.collapse:hover i {
+	transform: translateX(-0.1rem) scale(1.3);
+}
+
+/* show/hide itinerary */
+.itineraryContent:nth-child(1).show {
+	display: none;
+}
+
+.itineraryContent:nth-child(2) {
+	display: none;
+}
+
+.itineraryContent:nth-child(2).show {
+	display: block;
+}
+
+/* outline itinerary */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0.1rem solid #aaa;
+}
+
+tr:nth-child(1) {
+	border-bottom: 0.1rem solid #aaa;
+}
+
+th {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary);
+	padding: 1.5rem 0;
+}
+
+td {	
+	font-size: 1.3rem;
+	padding: 1rem 0.5rem;
+	color: var(--primary);
+	text-align: center;
+}
+
+td:nth-child(2) {
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: var(--secondary);
+}
+
+/* detail itineray */
+.detailItinerary {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.itineraryDays {
+	width: 100%;
+}
+
+.itineraryDay {
+	width: 98%;
+	padding: 1%;
+	box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+}
+
+.itineraryDay h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.itineraryDay p {
+	font-size: 1.4rem;
+	color: dimgray;
+	margin: 2rem 0;
+}
+
+.day {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.day, .itineraryDay span {
+	display: block;
+}
+
+.itineraryDayInfo {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(178, 216, 216, 0.2); 
+}
+
+.dayInfo {
+	width: 22%;
+	padding: 0 1%;
+	display: flex;
+	align-items: center;
+}
+
+.dayInfo i {
+	margin-right: 1.5rem;
+	font-size: 2.5rem;
+	color: teal;
+}
+
+.dayInfo p {
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.dayInfo span {
+	font-size: 1.2rem;
+	color: dimgray;
+	font-weight: 400;
+}
+
+/* customize trip */
+.customizeItinerary {
+	width: 90%;
+	margin: auto;
+}
+
+.customize {
+	width: 94%;
+	margin: auto;
+	height: 7rem;
+	background-color: rgba(0, 128, 128, 0.1); /* teal */
+	padding: 1.5% 2%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.customTrip {
+	display: flex;
+	align-items: center;
+}
+
+.customTrip i {
+	font-size: 3.5rem;
+	margin-right: 2.5rem;
+	color: dimgray;
+}
+
+.customTrip p {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.customTrip span {
+	display: block;
+	font-size: 1.2rem;
+	color: dimgray;
+	font-weight: 300;
+}
+
+.customBtn {
+	background-color: var(--orange);
+	color: var(--secondary);
+}
+
+/* SECTION - INCLUDED */
+.serviceContent {
+	width: 90%;
+	margin: 5rem auto 0;
+	color: var(--primary);
+}
+
+.serviceWrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.serviceTitle {
+	font-size: 2.2rem;
+	font-weight: 400;
+	padding: 2% 5%;
+}
+
+.service {
+	width: 50%;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service:nth-child(1) {
+	border-right: 0.1rem solid lightgrey;
+}
+
+.serviceItemWrapper {
+	padding: 0 5%;
+}
+
+.serviceItem {
+	display: flex;
+	align-items: center;
+	margin: 1.6rem 0;
+}
+
+.serviceItem i {
+	font-size: 2rem;
+	margin-right: 2rem;
+	color: teal;
+	width: 3rem;
+}
+
+.serviceItem p {
+	font-size: 1.4rem;
+}
+
+.serviceInfo {
+	font-size: 1.6rem;
+	margin: 2rem 1% 0;
+}
+
+/* meals & accommodation */
+.serviceHeadWrapper {
+	width: 100%;
+	margin: 5rem auto;
+	/*background-color: red;*/
+}
+
+.serviceHeadContent {
+	width: 98%;
+	margin: 1rem auto;
+}
+
+.serviceHeadContent p {
+	font-size: 1.4rem;
+	color: var(--primary);
+}
+
+.serviceHeadContent a {
+	color: var(--blue);
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.serviceHeadContent a:hover {
+	color: var(--orange);
+}
+
+/* SECTION - DATE AND PRICE */
+.datePriceContent {
+	width: 90%;
+	margin: 5rem auto;
+}
+
+.datePriceInfo {
+	font-size: 1.4rem;
+	color: var(--primary);
+	width: 98%;
+	margin: auto;
+}
+
+.datePriceInfo a {
+	color: var(--blue);
+	font-weight: 500;
+}
+
+.selectDate input {
+	border: none;
+	background: transparent;
+	width: 12rem;
+	font-size: 1.5rem;
+}
+
+.selectDate i {
+	font-size: 1.3rem;
+	color: dimgray;
+	cursor: pointer;
+	margin-right: 1.2rem;
+}
+
+/*departure*/
+.datePriceWrapper {
+	width: 98%;
+	height: 75vh;
+	margin: 3rem 1% 0;
+	color: var(--primary);
+	/*background-color: red;*/
+	overflow: hidden scroll;
+}
+
+.datePriceWrapper::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.datePriceWrapper::-webkit-scrollbar-track {
+  background: lightgray; 
+}
+
+.datePriceWrapper::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 1rem;
+}
+
+.datePriceWrapper::-webkit-scrollbar-thumb:hover {
+  background: teal; 
+}
+
+.datePriceHeader {
+	display: flex;
+	border: 0.1rem solid lightgrey;
+	padding: 1%;
+	background-color: var(--background);
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+
+.datePriceHeader p {
+	width: 25%;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.datePriceHeader p:nth-of-type(1) {
+	text-align: left;
+}
+
+.datePriceHeader span {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: dimgray;
+}
+
+.dateYear {
+	padding: 1%;
+	text-align: left;
+	font-size: 2rem;
+	font-weight: 500;
+	border-bottom: 0.1rem solid lightgrey;
+	color: var(--blue);
+}
+
+.datePriceWrapper span {
+	display: block;
+}
+
+.datePriceBody {
+	width: 100%;
+	border: 0.1rem solid lightgrey;
+}
+
+.departureDates{
+	width: 100%;
+	display: flex;
+	padding: 1% 0;
+}
+
+.departureDates:nth-child(odd) {
+	background-color: rgba(178, 216, 216, 0.2); 
+}
+
+.departureDates p {
+	font-size: 1.7rem;
+	text-align: center;
+	color: var(--blue);
+}
+
+.departureDates span {
+	font-size: 1.1rem;
+	color: dimgray;
+}
+
+.departureDate,
+.departureSpace,
+.departurePrice,
+.departureBook {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.departureDate {
+	justify-content: space-around;
+}
+
+.departureDate p i {
+	font-size: 1.6rem;
+}
+
+.departurePrice span {
+	color: var(--red);
+	text-decoration: line-through;
+	font-size: 1.3rem;
+}
+
+.departureBook button {
+	border: none;
+	height: 3.5rem;
+	width: 17rem;
+	background-color: var(--orange);
+	color: var(--secondary);
+	border-radius: 0.3rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.departureBook button:active {
+	transform: translateY(0.1rem);
+}
+
+/* trip map */
+.mapContent {
+	width: 100%;
+	margin: 5rem auto;
+}
+
+.mapWrapper {
+	width: 98%;
+	margin: 1rem auto;
+}
+
+iframe {
+	width: 100%;
+	border-width: 0;
+}
+
+
+/* SECTION FAQ */
+.faqContent {
+	width: 90%;
+	margin: auto;
+}
+
+.expand span {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+.faqWrapper {
+	width: 98%;
+	margin: 2rem auto;
+}
+
+.faq {
+	border: 0.1rem solid var(--secondary);
+	border-bottom: 0;
+}
+
+.faqHeader {
+	font-size: 1.7rem;
+	color: teal;
+	cursor: pointer;
+	padding: 1%;
+	border-bottom: 0.1rem solid var(--secondary);	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: color 0.3s;
+}
+
+.faqHeader:hover {
+	color: var(--orange);
+}
+
+.rotate i {
+	transform: rotate(45deg);
+}
+
+.faqBody {	
+	display: none;
+}
+
+.show.faqBody{
+	display: block;
+}
+
+.faqBody p {
+	font-size: 1.4rem;
+	color: dimgray;
+	padding: 0.5% 1%;	
+}	
+
+.faqFooter {
+	width: 98%;
+	margin: 5rem auto 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.faqFooter p {
+	font-size: 1.7rem;
+	color: var(--blue);
+	font-weight: 500;
+	transition: color 0.3s;
+
+}
+
+.faqFooter i {
+	color: var(--blue);
+	/*margin-right: 0.5rem;*/
+	font-size: 2.5rem;
+	vertical-align: top;
+	transition: color 0.3s;
+}
+
+.faqFooter:hover p,
+.faqFooter:hover i {
+	color: var(--orange);
+}
+
+/* SECTION - TRAVELERS REVIEW */
+.sectionTravReviews {
+	width: 90%;
+	margin: 5rem auto 0;
+}
+
+.travReviewsHeader {
+	width: 100%;
+	height: 8rem;
+	margin-top: 2rem;
+	background-color: rgba(178, 216, 216, 0.3);
+	border-bottom: 0.1rem solid lightgrey; 
+}
+
+.travHeaderWrapper {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.travReviewsTotal {
+	margin: 0 1%;
+	display: flex;
+	align-items: center;
+}
+
+.travReviewsTotal h3 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-right: 2rem;
+}
+
+.travReviewsStars {
+	font-size: 1.6rem;
+	margin: 0 0.2rem;
+	color: var(--orange);
+	vertical-align: middle;
+}
+
+.travReviewsSort {
+	margin: 0 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+} 
+
+.travReviewsSort p {
+	padding: 0 1rem;
+	font-size: 1.5rem;
+}
+
+.travReviewsSort p:nth-of-type(1) {
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
+.travReviewsSort i {
+	vertical-align: top;
+	cursor: pointer;
+	font-size: 1.7rem;
+	margin-left: 0.3rem;
+}
+
+.travReviewsContent {
+	width: 100%;
+}
+
+/* trav review */
+.travReviewWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.travReviewWrapper:nth-of-type(odd) {
+	background-color: rgba(178, 216, 216, 0.3);
+}
+
+.travReview {
+	width: 88%;
+	margin: auto;
+	display: flex;
+	padding: 4% 1% 3%;
+}
+
+.travReviewWrapper:nth-of-type(3),
+.travReviewWrapper:nth-of-type(4) {
+	display: none;
+}
+
+.expand .travReviewWrapper:nth-of-type(3),
+.expand .travReviewWrapper:nth-of-type(4) {
+	display: block;
+}
+
+.travReview img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+/*body*/
+.travReviewBody {
+	flex-basis: 70%;
+	margin: 0 1%;
+	padding: 0 1%;
+	color: var(--primary);
+}
+
+.travReviewTitle {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+.travReviewContent {
+	font-size: 1.4rem;
+	height: 14rem;
+	margin: 1rem auto;
+	line-height: 1.7;
+	overflow: hidden;
+}
+
+.appear .travReviewContent {
+	height: auto;
+	overflow: auto;
+}
+
+.showMore {
+	color: var(--blue);
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.showMore i {
+	font-size: 1.2rem;
+	margin-left: 0.7rem;
+}
+
+.travReviewer {
+	font-size: 1.6rem;
+	margin: 1rem 0;
+	text-transform: uppercase;
+}
+
+.travReviewer span {
+	font-size: 1.2rem;
+	display: block;
+	color: dimgray;
+}
+
+/* rating */
+.travReviewRating {
+	display: flex;
+	flex-direction: column;
+	flex-basis: fill;
+	margin-left: 4rem;
+}
+
+.travScore {
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--green);
+	color: var(--secondary);
+	letter-spacing: 0.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+
+.travRating {
+	display: flex;
+	align-items: center;
+	padding-bottom: 2.5rem;
+	border-bottom: 0.1rem solid lightgrey;
+}
+
+.travRank p {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.travRankStar {
+	font-size: 1.8rem;
+	color: var(--orange);
+}
+
+.travRatingItems {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+
+.travRatingItem {
+	margin: 1% 2.5%;
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.travRatingItem p {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.showReviewsContent {
+	text-align: center;
+	/*background-color: rgba(178, 216, 216, 0.3);*/
+	padding: 3rem 0;
+}
+
+.showReviewsContent button {
+	width: 25rem;
+	height: 5rem;
+	background-color: var(--orange);
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 0.8rem;
+	color: var(--secondary);
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+}
+
+.showReviewsContent button:hover {
+	background-color: teal;
+}
+
+.showReviewsContent button:active {
+	transform: scale(0.99);
+}
+
+/* SECTION - WHY US */
+.whyUsContent {
+	width: 100%;
+	margin-top: 5rem;
+	background-color: rgba(178, 216, 216, 0.2);
+}
+
+.whyUsWrapper {
+	width: 88%;
+	margin: auto;
+	padding: 5% 1%;
+}
+
+.whyUsHeader {
+	text-align: center;
+}
+
+.whyUsHeader h3 {
+	color: var(--primary);
+	font-size: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.whyUsHeader p {
+	color: dimgray;
+	font-size: 1.5rem;
+}
+
+.whyUsBody {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 5rem auto;
+}
+
+.whyUsDetail {	
+	width: 31%;	
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.whyUsInfo {
+	padding: 0 5% 0 3%;
+	text-align: center;
+}
+
+.whyUsInfo h4 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: teal;
+	padding: 0.5rem 0;
+}
+
+.whyUsInfo p {
+	font-size: 1.3rem;
+	color: dimgray;
+}
+
+.whyUsBody i {
+	font-size: 5rem;
+	color: teal;
+}
+
+.whyUsContent {
+	display: flex;
+}
+
+.whyUsFooter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.whyUsFooter img {
+	width: 17rem;
+	height: 8rem;
+	object-fit: contain;
+	margin: 0 1%;
+}
+
+.whyUsFooter p {
+	font-size: 1.7rem;
+	font-weight: 500;
+	color: teal;
+}
+
+.whyUsFooter img:nth-of-type(3),
+.whyUsFooter img:nth-of-type(5) {
+	width: 12rem;
+}
+
+/* SECTION - RELATED TRIPS */
+.relatedTripContent {
+	width: 90%;
+	margin: 5rem auto;
+	color: var(--primary);
+}
+
+.relatedTripWrapper {
+	width: 98%;
+	margin: 5rem auto;
+}
+
+.relatedTrips {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 3%;
+}
+
+.relatedTrip {
+	width: 31%;
+	margin: 1%;
+	box-shadow: 0.2rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.relatedTripContainer {
+	width: 100%;	
+	overflow: hidden;
+}
+
+.relatedTripContainer img {
+	width: 105%;
+	transform: translateX(-2.5%);
+	height: 22rem;
+	object-fit: cover;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.relatedTripContainer img:hover {
+	width: 100%;
+	transform: translateX(0);
+}
+
+.relatedTripHeading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 3%;
+}
+
+.relatedTripDestination {
+	font-size: 1.4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: dimgray;
+}
+
+.relatedTripStar {
+	color: var(--orange);
+}
+
+.relatedTripHeading p {
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+}
+
+.relatedTripRating {
+	display: flex;
+	align-items: center;
+}
+
+.relatedTripDays {
+	display: flex;
+	align-items: center;
+}
+
+.relatedTripTitle {
+	padding: 2% 4%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.relatedTripTitle a {
+	color: teal;
+	font-size: 2.1rem;
+	font-weight: 500;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.relatedTripTitle a:hover {
+	opacity: 1;
+}
+
+.relatedTripPrice {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 2% 5% 4%;
+}
+
+.relatedTripPrice p {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.relatedTripPrice span {
+	font-weight: 400;
+	border: none;
+}
+
+/* SECTION - RELATED TRIPS ENDS */
+
+
+/* SECTION TRIP PLANNING */
+.teamContent {
+	width: 100%;
+	height: 90vh;
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)), url(images/everest2.jpg) no-repeat center center/cover;
+	margin-top: 15rem;
+	position: relative;
+}
+
+.teamWrapper {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	background-color: var(--background);
+	position: absolute;
+	top: -5rem;
+	left: -2rem;
+	z-index: 2;
+	padding: 1rem 0 2rem;
+}
+
+.team {
+	width: 27%;
+	margin: 0 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.team p {
+	font-size: 2rem;
+	width: 100%;
+	color: rgba(0, 128, 128, 0.8);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.team p:hover {
+	color: teal;
+}
+
+.team span {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: dimgray;
+}
+
+.team img {
+	width: 100%;
+	height: 21rem;
+	object-fit: cover;
+}
+
+.planWrapper {
+	background-color: #ebebeb;
+	width: 53%;
+	height: 35rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--primary);
+	z-index: 1;
+}
+
+.planWrapper h3 {
+	font-size: 5rem;
+	font-weight: 500;
+}
+
+.planWrapper p:nth-of-type(1) {
+	font-size: 1.5rem;
+	width: 65%;
+	text-align: center;
+	margin: 1rem auto 4rem;
+}
+
+.planTrip {
+	display: flex;
+	align-items: center;
+	color: rgba(0, 128, 128, 0.8);
+}
+
+.planTrip i {
+	font-size: 2.5rem;
+	margin-right: 1rem;
+}
+
+.planTrip a {
+	font-size: 2.3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.planTrip:hover {
+	color: teal;
+}
+/* SECTION TRIP PLANNING ENDS */
+
+/* SECTION FOOTER */
+.footerContent {
+	width: 100%;
+	/*background-color: rgba(178, 216, 216, 0.3);*/
+	background: linear-gradient(rgba(178, 216, 216, 0.3), rgba(178, 216, 216, 0.6));
+}
+
+.footerWrapper {
+	width: 88%;
+	margin: 0 auto;
+	padding: 3% 1%;
+}
+
+/* affiliate */
+.footerAffiliate, 
+.footerAffiliateLocal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 0;
+}
+
+.footerAffiliateLocal {
+	padding: 1% 0 2%;
+}
+
+.footerAffiliate img {
+	min-width: 10rem;
+	height: 6rem;
+	object-fit: cover;
+	margin: 0 1.7%;
+}
+
+.footerAffiliateLocal img {
+	min-width: 10rem;
+	height: 6rem;
+	object-fit: contain;
+	margin: 0 2.3%;
+}
+
+/* links */
+.footerLinks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.footerLink h4 {
+	font-size: 1.6rem;
+	color: dimgray;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.footerLink a {
+	color: dimgray;
+	font-size: 1.4rem;
+}
+
+.footerLink a:hover {
+	color: var(--blue);
+}
+
+/* contact */
+.footerContact {
+	background-color: var(--background);
+}
+
+.contactWrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact img {
+	height: 3rem;
+	min-width: 3rem;
+	object-fit: contain;
+}
+
+.contact p {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--primary);
+	margin-top: 1%;
+}
+
+.contact span {
+	display: block;
+	font-size: 1.4rem;
+	color: dimgray;
+}
+
+/* subscribe */
+.subscribeWrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.subscribeWrapper h4 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--primary);
+}
+
+.subscribeWrapper p {
+	font-size: 1.4rem;
+	color: dimgray;
+	margin: 0.2% 0 1%;
+}
+
+.subscribeWrapper span {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: teal;
+}
+
+.formInput {
+	font-size: 1.5rem;
+	padding: 1rem;
+	width: 27%;
+	background-color: rgba(178, 216, 216, 0.4);
+	border: 0.1rem solid gray;
+	margin-left: 0.5rem;
+	border-radius: 0.4rem;
+}
+
+.btnSubmit {
+	background-color: var(--green);
+	color: var(--secondary);
+	text-transform: uppercase;
+	width: 17%;
+}
+
+/* copyright */
+.footerCopyright {
+	background-color: rgba(0, 0, 0, 0.87);
+}
+
+.copyrightWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logoWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.logoWrapper img {
+	height: 12rem;
+	margin-right: 2rem;
+}
+
+.copyright {
+	padding: 0.5rem 2rem;
+	border-left: 0.2rem solid dimgrey;
+}
+
+.copyright h4 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--orange);
+	padding: 0.3rem;
+}
+
+.copyright p {
+	color: lightgrey;
+	font-size: 1.2rem;
+	padding: 0.2rem 0;
+}
+
+.copyright i {
+	color: var(--red);
+	margin: 0 0.2rem;
+}
+
+.socialIcon a {
+	width: 5rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: var(--secondary);
+	border: 0.1rem solid var(--secondary);
+	border-radius: 50%;
+	margin: 0 2rem;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.socialIcon a:hover {
+	background-color: var(--orange);
+}
+
+.socialIcon {
+	display: flex;
+}
+
+
+
+/* SECTION FOOTER ENDS*/
